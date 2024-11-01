@@ -266,7 +266,8 @@ footer {
           font-size: 0.8rem;
     }
     .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust cards to fit smaller screens */
+       display:flex;
+        flex-direction:column;
     }
 
     .card {
