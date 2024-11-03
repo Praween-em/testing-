@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Table for Basic Plan</title>
+</head>
+<body style="background-color: #333; color: #fff; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <table style="width: 80%; border-collapse: collapse;">
+        <tr>
+            <th style="background-color: orange; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">Plan</th>
+            <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);" data-label="Plan">Basic</td>
+        </tr>
+        <tr>
+            <th style="background-color: orange; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">Stack</th>
+            <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);" data-label="Stack">HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+            <th style="background-color: orange; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">Hosting</th>
+            <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);" data-label="Hosting">GitHub Pages</td>
+        </tr>
+        <tr>
+            <th style="background-color: orange; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">Database</th>
+            <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);" data-label="Database">None</td>
+        </tr>
+        <tr>
+            <th style="background-color: orange; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">File Upload</th>
+            <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);" data-label="File Upload">No</td>
+        </tr>
+        <tr>
+            <th style="background-color: orange; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">Features</th>
+            <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);" data-label="Features">Simple 3-page site for small businesses</td>
+        </tr>
+        <tr>
+            <th style="background-color: orange; padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">Price</th>
+            <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.1);" data-label="Price">₹1,999</td>
+        </tr>
+    </table>
+
+    <style>
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            table, tr, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                background-color: orange;
+                text-align: left;
+                padding: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            td {
+                padding: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                position: relative;
+                margin-bottom: 8px; /* Space between each row to avoid overlap */
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+
+            /* Ensures text size is reduced on small screens */
+            td {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</body>
+</html>

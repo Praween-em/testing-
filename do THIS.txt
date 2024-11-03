@@ -1,0 +1,39 @@
+ON Mobile view increase padding on the nav bar so the sidebar logo will be visible more 
+reduce the marigin on the logo on the side bar so iti alligned with the company name 
+
+Add these following file 
+demos.html
+profile.html
+services.html
+carreres.html
+
+
+ADD Stacks to the plans and packages the stacks the will be built in the features provided and other things 
+
+basicPlan.html
+standardPlan.html
+professionalPlan.html
+premiumPlan.html
+enterprisePlan.html
+
+🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫(2/11/2024)
+Go to google and find phone numbers of local businesses 
+
+Hospitals 
+Individual Artists, Editors 
+Photo Studios 
+Mediium sized Shops 
+Professional Individuals 
+
+🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫🧑‍🏫
+
+
+
+Add the Payment Gateway to the project 
+
+Migrate the entire project to React 
+
+create a Whatsappbot for the Business
+
+
+
