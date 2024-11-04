@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Praisol Agency - Custom Web Development Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -47,7 +48,7 @@
     </nav>
 <header>
     <h1>Welcome to Praisol</h1>
-    <p>Select your Packages and Preffered Stack.</p>
+    <p>Select your Packages and Preffered Stack.</p>s
 </header>
 
 <section>
@@ -57,31 +58,31 @@
         <div class="card">
             <h3>Basic Plan</h3>
             <p>A simple, three-page website for small businesses and personal use.</p>
-            <p ><strong>Price:</strong> ₹ 1999</p>
+            <p style="color:#ff914d; font-weight:bold">Price:</strong> ₹ 1999</p>
             <button onclick="openBasicPlan()">Learn More</button>
         </div>
         <div class="card">
             <h3>Standard Plan</h3>
             <p>Multi-page website with contact forms and basic SEO.</p>
-            <p ><strong>Price:</strong> ₹ 6999</p>
+            <p style="color:#ff914d ; font-weight:bold">Price: ₹ 6999</p>
             <button onclick="openstandardPlan()">Learn More</button>
         </div>
         <div class="card">
             <h3>Premium Plan</h3>
             <p>Full website with responsive design, SEO, and analytics integration.</p>
-            <p ><strong>Price:</strong> ₹ 14999</p>
-            <button>Learn More</button>
+            <p style="color:#ff914d ; font-weight:bold">Price: ₹ 14999</p>
+            <button onclick="openPremiumPlan()" >Learn More</button>
         </div>
         <div class="card">
             <h3>Professional Plan</h3>
             <p>Custom-built website tailored to your business needs with premium features.</p>
-            <p ><strong>Price:</strong> ₹ 24999</p>
+            <p style="color:#ff914d ; font-weight:bold">Price: ₹ 24999</p>
             <button>Learn More</button>
         </div>
         <div class="card">
             <h3>Enterprise Plan</h3>
             <p>Enterprise-grade solutions with dedicated support and hosting management.</p>
-            <p ><strong>Price:</strong> Contact for pricing</p>
+            <p style="color:#ff914d ; font-weight:bold">Price: Contact for pricing</p>
             <button>Learn More</button>
         </div>
     </div>
@@ -134,6 +135,13 @@
     function openstandardPlan(){
         window.location.href = 'standardPlan.html'
     }
+</script>
+
+<script>
+    function  openPremiumPlan(){
+        window.location.href = 'premiumPlan.html'
+    }
+
 </script>
 
 </body>

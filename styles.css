@@ -109,7 +109,7 @@ section h2 {
     box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.37) ;
     max-width: 300px;
     padding: 20px;
-    
+   
     transition: transform 0.3s ease;
 }
 
