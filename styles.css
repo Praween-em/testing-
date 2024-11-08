@@ -6,25 +6,40 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #111;
+    background: rgb(15, 14, 13);
+
     color: #fff;
 }
 
 /* Navigation bar styles */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     font-family: 'Segoe UI', 'Tahoma', Geneva, Verdana, sans-serif;
     font-style: 'Tahoma';
     font-size: larger;
-    padding: 10px 5%;
+    position: relative;
+    z-index: 1000;
+    border-radius: 25px;
+    padding: 1px 5%;
+    margin-top: 10px;
+    width: 80%;
+    left: 175px;
+    border:1px solid rgb(255, 255,255, 0.1);
+    box-shadow:0 8px 25px 0 rgba(0, 3, 0, 1.2) ;
+    box-shadow:0 0.5px 1px 0 #ff914d ;
+
+
 
 }
 
 nav .left {
     display: flex;
     align-items: center;
+    font-family: cursive;
 }
 
 nav .plogo {
@@ -34,7 +49,7 @@ nav .plogo {
 nav .right {
     display: flex;
     align-items: center;
-  
+    margin-left: 10px;
     flex-wrap: wrap; /* Allow links to wrap */
 }
 
@@ -43,18 +58,22 @@ nav .right a {
     text-decoration: none;
     margin-left: 20px;
     margin:20px ;
-    font-size: 1.7rem;
+    font-size: 2.0rem;
     transition: color 0.3s;
 }
 
+
+
 nav a:hover {
     color: #ff914d;
-    
+    background-color: transparent;
+    font-size: 1.9rem;
+    font-family: cursive;
 }
 
 header {
-    position: relative;
     
+    position: relative;
   background-color: #ff914d;
     padding: 20px;
     text-align: center;
@@ -74,16 +93,7 @@ header p {
     font-size: 1.2rem; /* Adjusted for better responsiveness */
 }
 
-section {
-    padding: 50px 5%;
-    text-align: center;
-}
 
-section h2 {
-    color: #ff914d;
-    margin-bottom: 20px;
-    font-size: 2rem; /* Adjusted for better responsiveness */
-}
 
 .card-container {
     display: grid;
@@ -115,6 +125,11 @@ section h2 {
 
 .card:hover {
     transform: scale(1.1);
+    border:0.3px solid #ff914d;
+    box-shadow:0 8px 25px 0 #ff914d ;
+    cursor: pointer;
+
+
 
 }
 
@@ -157,17 +172,18 @@ footer {
     position: fixed;
     top:0;
     left:0;
-    height:fit-content;
+    height:100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: 'Franklin Gothic Medium';
-    width: 250px;
+    font-size: 2.3rem;
+    width: 100%;
     z-index:999;
     background:linear-gradient(135deg,rgb(255, 255,255, 0.1),rgba(255,255,255,0));
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-    border:1px solid rgb(255, 255,255, 0.1);
-    box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.37) ;
-    justify-content:safe;
+    transition: transform 3s ease, color 3s ease;
+    justify-content:center;
+    align-items: center;
     
     display: flex;
     flex-direction: column;
@@ -189,16 +205,42 @@ footer {
     justify-content: space-around;
 }
 
-.container .img :hover{
-    width:18px;
-    height: 18px;
-    cursor: pointer;
-}
+
 .sidebar a:hover{
-    color: #ff914d;
-    background-color: antiquewhite;
+    cursor:pointer;
+    transform: scale(1.5);
+    font-family: cursive; 
+    font-weight: bolder;
+    text-shadow:
+    -1px -1px 0 black, /* Top left */
+    1px -1px 0 black,  /* Top right */
+    -1px 1px 0 black,  /* Bottom left */
+    1px 1px 0 black;   /* Bottom right */
+}
+
+.sidebar img:hover{
+    cursor: alias;
+    transform: scale(1.5);
+   
+
+}
+
+.asideh1{
+    width: 50%;
+    font-size: 5rem;
     
 }
+
+.ex {
+    color: #ff914d;
+    font-size: 7rem;
+    font-style: italic;
+    font-family: cursive;
+}
+.asideh2{
+    display: flex; margin-top:20px ;color:#ff914d; font-size:2rem;
+}
+
 .logoma a {
     width: 150px;
     height: 100px;
@@ -207,12 +249,21 @@ footer {
     margin: 5px;
 }
 
+.cont2 img:hover{
+    cursor: alias;
+    transform: scale(1.5);
+}
+
 .tableclass{
     background:linear-gradient(135deg,rgb(255, 255,255, 0.1),rgba(255,255,255,0));
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     border:1px solid rgb(255, 255,255, 0.1);
     box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.37) ;
+}
+.sidenavele{
+display: flex; 
+flex-direction:row;
 }
 
 
@@ -228,14 +279,19 @@ footer {
    }
    
 .left .h1{
-    font-size: 2rem; 
-    
-    
+    font-size: 2rem;     
     }
 
     nav{
+        position: relative;
+        z-index: 999;
         width: auto;
+        
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
     }
+
     /* Show the right section in a column when active */
     .right.active {
         display: flex;
@@ -253,23 +309,48 @@ footer {
         padding: 10px 0;
         font-size: 1.2rem;
     }
+    .sidebar  {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar a:hover{
+        cursor:pointer;
+        transform: scale(1.5);
+        
+        font-family: cursive; 
+        font-weight: bolder;
+        text-shadow:
+        -1px -1px 0 black, /* Top left */
+        1px -1px 0 black,  /* Top right */
+        -1px 1px 0 black,  /* Bottom left */
+        1px 1px 0 black;   /* Bottom right */
+    }
+
+    .sidenavele{
+        display: flex; 
+        flex-direction:column;
+        }
+        
     header{
         z-index: -1;
         width: 100%;
         overflow: hidden;
     }
 
-    header h1 {
-        font-size: 1rem; /* Adjust header size for smaller screens */
+    aside {
+       margin-top: 10px;
+        margin-top: px;
+        font-style: italic;
+        font-family: cursive;
+    }
+    .asideh1  h1{
+        font-size: 2.9rem; /* Adjust header size for smaller screens */
     }
 
-    header p {
-        font-size: 0.6rem; /* Adjust paragraph size for smaller screens */
+    .asideh1 {
+        font-size: 2.9rem;
     }
-
-    section h2 {
-        font-size: 1rem; /* Adjust section title size for smaller screens */
-    }
+   
 
     .card {
         z-index: -1;
@@ -305,6 +386,7 @@ th {
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 td {
     padding: 10px;
